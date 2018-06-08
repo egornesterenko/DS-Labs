@@ -37,8 +37,8 @@ int main ()
     cout << endl;
     print(copytree, 0);
     
-    cout<<"ведите элемент для добавления, или 000 что бы выйти  ";
-    cin>>s;
+    cout << "ведите элемент для добавления, или 000 что бы выйти  ";
+    cin >> s;
     while (s!= 000)  {
         add(s, &tree);
         print(tree,0);
@@ -48,8 +48,8 @@ int main ()
         cout << endl;
         cout << endl;
         print(copytree, 0);
-        cout<<"ведите элемент для добавления, или 000 что бы выйти  ";
-        cin>>s;
+        cout << "ведите элемент для добавления, или 000 что бы выйти  ";
+        cin >> s;
     } }
 
 void add(int a,node **t)

@@ -34,8 +34,6 @@ Node* List::returnFirst(){
     return this->first;
 }
 
-using namespace std;
-
 int main() {
     int n;
     cout << "Введите количество вершин графа: ";
@@ -96,7 +94,7 @@ int main() {
         cout << endl;
     }
     
-    //    // Floyd–Warshall
+    // Floyd–Warshall
     for (int k = 0; k < n; ++k) {
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < n; ++j) {
@@ -113,7 +111,7 @@ int main() {
     for (int l = 0; l < n; ++l) {
         cout << l << "  ";
         for (int i = 0; i < n; ++i) {
-            cout << setw(2)<< dist[l][i];
+            cout << setw(2) << dist[l][i];
         }
         cout << endl;
     }
